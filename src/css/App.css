@@ -1,0 +1,41 @@
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+}
+
+.App {
+  text-align: center;
+}
+
+.rotatedLogoContainer {
+  background: linear-gradient(to right, #F6EFD2, #CEAD78);
+  border-radius: 80%;
+  height: 20%;
+  width: 20%;
+  color: white;
+}
+
+.App-logo-half-sec {
+  animation: App-logo-spin infinite 0.5s linear;
+}
+
+.App-logo-two-sec {
+  animation: App-logo-spin infinite 2s linear;
+}
+
+.App-logo-six-sec {
+  animation: App-logo-spin infinite 6s linear;
+}
+
+.App-logo-eight-sec {
+  animation: App-logo-spin infinite 8s linear;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
