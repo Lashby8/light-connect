@@ -3,18 +3,62 @@ body {
   font-size: 1.5em;
 }
 
-.App {
-  text-align: center;
+.app-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.additional-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .rotatedLogoContainer {
-  background: linear-gradient(to right, #F6EFD2, #CEAD78);
-  border-radius: 80%;
-  height: 20%;
-  width: 20%;
+  display: flex;
+  align-self: center;
+  min-width: 50%;
+  min-height: 50%;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
   color: white;
 }
-
+.store-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.state-managers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background-container {
+  background-color: black;
+  background: radial-gradient(40% 50%, #FAECD5, #CAE4D8) no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+button {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    border: 2px solid #4CAF50;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #4CAF50;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
 .App-logo-half-sec {
   animation: App-logo-spin infinite 0.5s linear;
 }

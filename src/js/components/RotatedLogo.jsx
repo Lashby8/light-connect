@@ -4,7 +4,7 @@ import '../../css/App.css';
 
 const RotatedLogo = ({ animatonClass }) => (
     <div className='rotatedLogoContainer'>
-        <img className={animatonClass} src={logo}></img>
+        <img className={animatonClass} src={logo} />
     </div>
 );
 

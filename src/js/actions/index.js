@@ -21,3 +21,8 @@ export const setDurationAtEightSec = isRevertDirection =>
         type: 'EIGHT_SEC',
         payload: isRevertDirection ? '' : ''
     });
+
+export const handleChangeBackgroundMode = () =>
+    ({
+        type: 'BACKGROUND_SWITCH_MODE'
+    });
