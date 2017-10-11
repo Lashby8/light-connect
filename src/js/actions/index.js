@@ -1,28 +1,12 @@
-export const setDurationAtHalfSec = isRevertDirection =>
-    ({
-        type: 'HALF_SEC',
-        payload: isRevertDirection ? '' : ''
-    });
+import { SET_ANIMATION_DURATION, BACKGROUND_SWITCH_MODE, LOGO_ANIMATION_CLASSNAMES } from '../constants';
 
-export const setDurationAtTwoSec = isRevertDirection =>
-    ({
-        type: 'TWO_SEC',
-        payload: isRevertDirection ? '' : ''
-    });
-
-export const setDurationAtSixSec = isRevertDirection =>
-    ({
-        type: 'SIX_SEC',
-        payload: isRevertDirection ? '' : ''
-    });
-
-export const setDurationAtEightSec = isRevertDirection =>
-    ({
-        type: 'EIGHT_SEC',
-        payload: isRevertDirection ? '' : ''
-    });
+export const setAnimationDuration = seconds =>
+	({
+		type: SET_ANIMATION_DURATION,
+		payload: LOGO_ANIMATION_CLASSNAMES[seconds]
+	});
 
 export const handleChangeBackgroundMode = () =>
     ({
-        type: 'BACKGROUND_SWITCH_MODE'
+        type: BACKGROUND_SWITCH_MODE
     });

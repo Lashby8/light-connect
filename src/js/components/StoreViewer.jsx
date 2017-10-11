@@ -10,7 +10,7 @@ const mapStateToProps = store => ({
 class StoreViewer extends Component {
     render() {
         return(
-            <div className={'store-viewer'}>
+            <div className='store-viewer'>
                 <h3>{'Redux store viewer:'}</h3>
                 <span>{JSON.stringify(this.props.reduxState)}</span>
             </div>

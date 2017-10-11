@@ -5,22 +5,22 @@ import propTypes from 'prop-types';
 const StateManagers = ({ handleChangeDuration, handleChangeBackgroundMode }) => (
     <div className='state-managers'>
         <span>{'Change the duration of animation in Redux store here:'}</span>
-        <button onClick={() => handleChangeDuration('0.5')}>
+        <button onClick={() => handleChangeDuration('0.5s')}>
             <span>
                 {'0.5s'}
             </span>
         </button>
-        <button onClick={() => handleChangeDuration('2')}>
+        <button onClick={() => handleChangeDuration('2s')}>
             <span>
                 {'2s'}
             </span>
         </button>
-        <button onClick={() => handleChangeDuration('6')}>
+        <button onClick={() => handleChangeDuration('6s')}>
             <span>
                 {'6s'}
             </span>
         </button>
-        <button onClick={() => handleChangeDuration('8')}>
+        <button onClick={() => handleChangeDuration('8s')}>
             <span>
                 {'8s'}
             </span>

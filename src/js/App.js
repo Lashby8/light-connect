@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import { RotatedLogo, StateManagers, StoreViewer } from './components';
 import lightConnect from './connect';
-import { setDurationAtHalfSec,
-    setDurationAtTwoSec,
-    setDurationAtSixSec,
-    setDurationAtEightSec,
+import { setAnimationDuration,
     handleChangeBackgroundMode } from './actions';
 import '../css/App.css';
 
@@ -18,24 +15,7 @@ const mapStateToProps = store => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        handleChangeDuration: seconds => {
-            switch(seconds) {
-            case '0.5':
-                dispatch(setDurationAtHalfSec());
-                break;
-            case '2':
-                dispatch(setDurationAtTwoSec());
-                break;
-            case '6':
-                dispatch(setDurationAtSixSec());
-                break;
-            case '8':
-                dispatch(setDurationAtEightSec());
-                break;
-            default:
-                return;
-            }
-        },
+        handleChangeDuration: seconds => dispatch(setAnimationDuration(seconds)),
         handleChangeBackgroundMode: () => dispatch(handleChangeBackgroundMode())
     };
 };
@@ -47,7 +27,7 @@ class App extends Component {
                 <RotatedLogo
                     animatonClass={this.props.animationClass}
                 />
-            <div className={'additional-elements'}>
+            <div className='additional-elements'>
                     <StateManagers
                         handleChangeDuration={this.props.handleChangeDuration}
                         handleChangeBackgroundMode={this.props.handleChangeBackgroundMode}
